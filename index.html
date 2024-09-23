@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commissions</title>
+    <style>
+        body {
+            font-family: 'Twentieth Century', sans-serif;
+            background-image: url('https://i.imgur.com/LoWlz6J.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            max-width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            margin: 0.5em 0;
+            border: 2px solid #000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+        }
+
+        p {
+            border: 2px solid #000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 2px solid #000;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #000;
+            word-wrap: break-word;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        @media (max-width: 600px) {
+
+            th,
+            td {
+                padding: 5px;
+            }
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-container img {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="title-container">
+            <h1>
+                Commissions, by Xr60031
+                <img src="https://i.imgur.com/85KCAPV.jpeg" alt="Avatar">
+            </h1>
+        </div>
+
+        <h2>Hand Drawn Paper Commissions</h2>
+
+        <h3>About Me:</h3>
+        <h4>An artist which is trying to make a living of making amazing drawings for you!</h4>
+        <h4>I enjoy reading about your astonishing ideas, and make them come to life!</h4>
+
+        <h3>Color Example:</h3>
+        <div class="slider-container" id="slider1">
+            <div class="slides">
+                <div class="slide"><img src="https://i.imgur.com/jI44tA8.jpeg" alt="Image 1" style="width:100%;"></div>
+                <div class="slide"><img src="https://i.imgur.com/UOJm2Xu.jpeg" alt="Image 2" style="width:100%;"></div>
+                <div class="slide"><img src="https://i.imgur.com/R0r6ebu.jpeg" alt="Image 3" style="width:100%;"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1, 'slider1')">❮</button>
+            <button class="next" onclick="moveSlide(1, 'slider1')">❯</button>
+        </div>
+
+        <h3>Lineart Example:</h3>
+        <div class="slider-container" id="slider2">
+            <div class="slides">
+                <div class="slide"><img src="https://i.imgur.com/91wGl7D.jpeg" alt="Image 4" style="width:100%;"></div>
+                <div class="slide"><img src="https://i.imgur.com/lu6QIPn.jpeg" alt="Image 5" style="width:100%;"></div>
+                <div class="slide"><img src="https://i.imgur.com/fFpQbBh.jpeg" alt="Image 6" style="width:100%;"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1, 'slider2')">❮</button>
+            <button class="next" onclick="moveSlide(1, 'slider2')">❯</button>
+        </div>
+
+        <h3>Sketch Example:</h3>
+        <div class="slider-container" id="slider3">
+            <div class="slides">
+                <div class="slide"><img src="https://i.imgur.com/Q22XIu6.jpeg" alt="Image 7" style="width:100%;"></div>
+                <div class="slide"><img src="https://i.imgur.com/GEWbtud.jpeg" alt="Image 8" style="width:100%;"></div>
+                <div class="slide"><img src="https://i.imgur.com/Emj1ABn.jpeg" alt="Image 9" style="width:100%;"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1, 'slider3')">❮</button>
+            <button class="next" onclick="moveSlide(1, 'slider3')">❯</button>
+        </div>
+
+        <h3>Forms of Payment:</h3>
+        <h4>I exclusively work with PayPal, paid upfront the 50% of the agreed price for the commission.</h4>
+        <h4>I accept up to two separate payments for the initial commission (besides the initial payment). However, this
+            has a 30% fee.
+        </h4>
+
+        <h3>Prices:</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Art Style</th>
+                    <th>Bust</th>
+                    <th>Half-Body</th>
+                    <th>Full-Body</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sketch</td>
+                    <td>8.50</td>
+                    <td>13</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Lineart</td>
+                    <td>14</td>
+                    <td>24</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>Colour</td>
+                    <td>24</td>
+                    <td>39</td>
+                    <td>56</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Disclaimers!</h3>
+        <h4>A deadline will be settled upon analyzing your idea. After half of the days agreed have passed, I am going
+            to send
+            you the progress that has been made in the commission.
+        </h4>
+        <h4>The drawing will be sent digitally through a PDF and/or JPG.</h4>
+        <h4>Adding extra characters, or discussing particular details may change the price accordingly.</h4>
+
+        <h3>SPECIAL DISCOUNTS!</h3>
+        <h4>(These special disccounts are not cumulative.)</h4>
+
+        <h4>1 - FIRST TIME BUYER</h4>
+        <h5>If this is your first time making me a commission, you will have a 50% disscount!</h5>
+
+        <h4>2 - PAY TWO, TAKE THREE</h4>
+        <h5>If you commission three drawings at the same time, the one with the lowest price is free!</h5>
+
+        <h4>3 - SKETCH UPGRADE SPECIAL</h4>
+        <h5>If you commission two Sketch-type drawings, one of those two can be a Lineart-type drawing with no extra charge!</h5>
+
+
+
+    </main>
+    <script>
+        function moveSlide(direction, sliderId) {
+            const slider = document.getElementById(sliderId);
+            const slides = slider.querySelector('.slides');
+            const totalSlides = slides.children.length;
+            let currentIndex = parseInt(slides.getAttribute('data-index')) || 0;
+
+            currentIndex += direction;
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            } else if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            }
+
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            slides.setAttribute('data-index', currentIndex);
+        }
+    </script>
+</body>
+
+</html>
